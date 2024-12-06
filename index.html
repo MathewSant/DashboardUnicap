@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Dashboard de Vendas</title>
+      <link rel="shortcut icon" href="images/page-img/logoUnicap.png" />
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/typography.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link href='fullcalendar/core/main.css' rel='stylesheet' />
+      <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+      <link href='fullcalendar/list/main.css' rel='stylesheet' />
+
+      <link rel="stylesheet" href="css/flatpickr.min.css">
+
+   </head>
+   <body>   
+      <div class="wrapper">
+         <div class="iq-sidebar">
+            <div class="iq-navbar-logo d-flex justify-content-between">
+               <div class="w-100">
+                  <a href="index.html" class="header-logo d-flex justify-content-center">
+                  <img src="images/page-img/logoUnicap.png" class="img-fluid rounded" alt="">
+               </a>
+            </div>
+               <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu">
+                     <div class="main-circle"><i class="ri-menu-line"></i></div>
+                     <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">
+                     <li class="active">
+                        <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Dashboard</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="dashboard" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
+                           <li class="active"><a href="index.html"><i class="las la-laptop-code"></i>Dashboard de Vendas</a></li>                           
+                        </ul>
+                     </li>                                                                          
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         <div class="iq-top-navbar">
+            <div class="iq-navbar-custom">
+               <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <div class="iq-menu-bt d-flex align-items-center">
+                     <div class="wrapper-menu">
+                        <div class="main-circle"><i class="ri-menu-line"></i></div>
+                        <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                     </div>
+                     <div class="iq-navbar-logo d-flex justify-content-between ml-3">
+                        <a href="index.html" class="header-logo">
+                        <img src="images/logo.png" class="img-fluid rounded" alt="">
+                        <span>FinDash</span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="iq-search-bar">
+                     <form action="#" class="searchbox">
+                        <input type="text" class="text search-input" placeholder="Digite aqui para pesquisar...">
+                        <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                     </form>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
+                  <i class="ri-menu-3-line"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto navbar-list">                   
+                        <li class="nav-item nav-icon">
+                           <a href="#" class="iq-waves-effect bg-primary rounded"><span class="ripple rippleEffect"></span><i class="ri-shopping-cart-2-line"></i></a>
+                        </li>
+                        <li class="nav-item nav-icon">
+                           <a href="#" class="search-toggle iq-waves-effect bg-primary rounded">
+                           <i class="ri-notification-line"></i>
+                           <span class="bg-danger dots"></span>
+                           </a>
+                       
+                        </li>
+                        <li class="nav-item nav-icon dropdown">
+                           <a href="#" class="search-toggle iq-waves-effect bg-primary rounded">
+                           <i class="ri-mail-line"></i>
+                           <span class="bg-danger count-mail"></span>
+                           </a>
+                           <div class="iq-sub-dropdown">
+                              <div class="iq-card shadow-none m-0">
+                                 <div class="iq-card-body p-0 ">
+ 
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <ul class="navbar-list">
+                     <li class="line-height">
+                        <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                           <img src="https://media.licdn.com/dms/image/v2/C4E03AQEqjhewsAInyg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1623113403648?e=1738800000&v=beta&t=6bzWdSoxD4aHHpCd32OHJHvH27mxlpeG2-pKyZTsuy4" class="img-fluid rounded mr-3" alt="user">
+                           <div class="caption">
+                              <h6 class="mb-0 line-height">Gabriel Fernandes</h6>
+                              <p class="mb-0">Professor</p>
+                           </div>
+                        </a>                      
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         
+         <div id="content-page" class="content-page">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
+                              <i class="ri-focus-2-line"></i>
+                           </div>
+                           <p class="text-secondary">Total de Vendas</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                               <h4 id="totalVendas"><b></b></h4>
+                               <div id="iq-chart-box1"></div>
+                               <span class="text-primary" id="percentualAlteracao"><b>  <i class="ri-arrow-up-fill"></i></b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-danger">
+                              <i class="ri-pantone-line"></i>
+                           </div>
+                           <p class="text-secondary">Vendas Hoje</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                               <h4 id="vendasHoje"><b></b></h4>
+                               <div id="iq-chart-box2"></div>
+                               <span class="text-danger" id="percentualAlteracaoHoje"><b><i class="ri-arrow-down-fill"></i></b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-success">
+                              <i class="ri-database-2-line"></i>
+                           </div>
+                           <p class="text-secondary">Lucro Total</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                               <h4 id="lucroTotal"><b></b></h4>
+                               <div id="iq-chart-box3"></div>
+                               <span class="text-success fw-bold" id="percentualAlteracaoLucro"><b><i class="ri-arrow-up-fill"></i></b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body iq-box-relative">
+                           <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-warning">
+                              <i class="ri-pie-chart-2-line"></i>
+                           </div>
+                           <p class="text-secondary">Lucro Hoje</p>
+                           <div class="d-flex align-items-center justify-content-between">
+                               <h4 id="lucroHoje"><b></b></h4>
+                               <div id="iq-chart-box4"></div>
+                               <span class="text-warning" id="percentualAlteracaoLucroHoje"><b><i class="ri-arrow-up-fill"></i></b></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Estatísticas de vendas </h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <ul class="nav nav-pills">
+                                 <li class="nav-item">
+                                    <a href="#" class="nav-link active">Finanças</a>
+                                 </li>                              
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="iq-card-body row m-0 align-items-center pb-0">
+                           <div class="col-md-8">
+                              <div id="iq-income-chart"></div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="chart-data-block ms-5">
+                                 <h4><b>Total</b></h4>
+                                 <h2 id="rendaSemanaPassada"><b>R$ 0,00</b></h2>
+                                 <p>Renda da semana passada</p>
+                                 <div class="chart-box d-flex align-items-center justify-content-between mt-5 mb-5">
+                                    <div id="iq-chart-boxleft"></div>
+                                    <div id="iq-chart-boxright2"></div>
+
+                                    <div id="iq-chart-boxright"></div>
+
+                                 </div>
+                                 <div class="mt-3 pr-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-primary p-1 rounded mr-2"></span>
+                                            <p class="mb-0">Vendas com sucesso</p>
+                                        </div>
+                                        <h6 id="vendasSucesso"><b></b></h6>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                       <div class="d-flex align-items-center">
+                                           <span class="bg-warning p-1 rounded mr-2"></span>
+                                           <p class="mb-0">Vendas em andamento</p>
+                                       </div>
+                                       <h6 id="vendasAndamento"><b></b></h6>
+                                   </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="bg-danger p-1 rounded mr-2"></span>
+                                            <p class="mb-0">Vendas com falhas</p>
+                                        </div>
+                                        <h6 id="vendasFalhas"><b></b></h6>
+                                    </div>                                    
+                                </div>                                
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height banner-image-block-bg position-relative" style="background: transparent url(images/page-img/unicap-removebg-preview.png) no-repeat scroll center bottom; background-size: contain; height: 440px; box-shadow: none;">
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Histórico de Vendas</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown">
+                                 <span class="dropdown-toggle text-primary" id="dropdownMenuButton5" data-toggle="dropdown">
+                                 <i class="ri-more-fill"></i>
+                                 </span>
+                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                    <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
+                              <table class="table mb-0 table-striped">
+                                 <thead class="thead-light">
+                                     <tr>
+                                         <th scope="col">Cliente</th>
+                                         <th scope="col">Data</th>
+                                         <th scope="col">ID</th>
+                                         <th scope="col">Valor</th>
+                                         <th scope="col">Status</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody id="tableBody">
+                                 </tbody>
+                             </table>
+                             
+                             <div class="d-flex justify-content-between mt-3">
+                                 <button id="prevPage" class="btn btn-secondary" disabled>Anterior</button>
+                                 <button id="nextPage" class="btn btn-secondary">Próximo</button>
+                             </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4" id="despesasContainer">
+                 </div>
+                 
+                  <div class="col-lg-4">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Porcentagem de usuários</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div id="home-perfomer-chart"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Usuários</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <ul id="userListContainer" class="perfomer-lists m-0 p-0">
+                           </ul>
+                       </div>
+                       
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="iq-card iq-card-block iq-card-stretch" style="position: relative;">
+                        <div class="iq-card-body">
+                            <h6>Contagem de Pedidos por Status</h6>
+                        </div>
+                        <div id="home-profit-chart"></div>
+                    </div>                    
+                  
+                 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>     
+     
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/apexcharts.js"></script>
+      <script src="js/lottie.js"></script>
+      <script src="js/raphael-min.js"></script>
+      <script src="js/morris.js"></script>
+      <script src="js/chart-custom.js"></script>
+      <script src="js/teste.js"></script>
+
+      <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+      <p class="text-secondary">Total de Vendas</p>
+<div class="d-flex align-items-center justify-content-between">
+    <h4 id="totalVendas"><b></b></h4>
+    <div id="iq-chart-box1"></div>
+    <span class="text-primary" id="percentualAlteracao"><b> <i class="ri-arrow-up-fill"></i></b></span>
+</div>
+
+<script>
+    Parse.initialize("NJ8bcd0FwhzYNTPAQXwKWQkbDL0CvK9PuSoMzdqt", "c9AHTnKYqkn8ZJLV39IC1oQq9dQpi2P2OzL9qJr3");
+    Parse.serverURL = 'https://parseapi.back4app.com';
+
+    function formatCurrency(value) {
+        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+      function getLastWeekDateRange() {
+         const today = new Date();
+         const lastSunday = today.getDate() - today.getDay() - 7;
+         const firstDayOfLastWeek = new Date(today.setDate(lastSunday));
+
+         const lastSaturday = firstDayOfLastWeek.getDate() + 6; 
+         const lastDayOfLastWeek = new Date(today.setDate(lastSaturday));
+
+         return {
+            startDate: firstDayOfLastWeek.toISOString().split('T')[0],
+            endDate: lastDayOfLastWeek.toISOString().split('T')[0],
+         };
+      }
+    async function getSalesData() {
+        try {
+            const Vendas = Parse.Object.extend("Pagamento");
+            const query = new Parse.Query(Vendas);
+            
+            const vendas = await query.find();
+
+            const totalVendas = vendas.length;
+
+            const vendasMesAnterior = 10000; 
+
+            const percentual = vendasMesAnterior > 0 ? ((totalVendas - vendasMesAnterior) / vendasMesAnterior) * 100 : 0;
+
+            document.getElementById('totalVendas').innerHTML = totalVendas;
+            document.getElementById('percentualAlteracao').innerHTML = ` +${percentual.toFixed(2)}% <i class="ri-arrow-up-fill"></i>`;
+        } catch (error) {
+            console.error("Erro ao buscar os dados de vendas:", error);
+        }
+    }
+    async function getTodaySalesData() {
+      try {
+          const Vendas = Parse.Object.extend("Pagamento");
+          const query = new Parse.Query(Vendas);
+
+          const today = new Date();
+          const todayDate = today.toISOString().split('T')[0]; 
+
+          query.equalTo("data_pagamento", todayDate);
+          
+          const vendasHoje = await query.find();
+
+          const numeroVendasHoje = vendasHoje.length;
+
+          const vendasDiaAnterior = 10;
+
+          const percentualHoje = vendasDiaAnterior > 0 ? ((numeroVendasHoje - vendasDiaAnterior) / vendasDiaAnterior) * 100 : 0;
+
+          document.getElementById('vendasHoje').innerHTML = numeroVendasHoje; 
+          document.getElementById('percentualAlteracaoHoje').innerHTML = ` ${percentualHoje.toFixed(2)}% <i class="ri-arrow-down-fill"></i>`;
+      } catch (error) {
+          console.error("Erro ao buscar os dados de vendas de hoje:", error);
+      }
+  }
+
+  async function getTotalProfit() {
+   try {
+       const Vendas = Parse.Object.extend("Pagamento");
+       const query = new Parse.Query(Vendas);
+       
+       const vendas = await query.find();
+
+       const lucroTotal = vendas.reduce((acc, venda) => acc + venda.get('valor'), 0);
+
+       const lucroMesAnterior = 15000; 
+
+       const percentualLucro = lucroMesAnterior > 0 ? ((lucroTotal - lucroMesAnterior) / lucroMesAnterior) * 100 : 0;
+
+       document.getElementById('lucroTotal').innerHTML = formatCurrency(lucroTotal);
+       document.getElementById('percentualAlteracaoLucro').innerHTML = ` +${percentualLucro.toFixed(2)}% <i class="ri-arrow-up-fill"></i>`;
+   } catch (error) {
+       console.error("Erro ao buscar os dados de lucro total:", error);
+   }
+}
+async function getLucroHoje() {
+   try {
+       const Vendas = Parse.Object.extend("Pagamento");
+       const query = new Parse.Query(Vendas);
+       
+       const today = new Date().toISOString().split('T')[0]; 
+       
+       query.equalTo("data_pagamento", today);
+
+       const vendasHoje = await query.find();
+
+       const lucroHoje = vendasHoje.reduce((acc, venda) => acc + venda.get('valor'), 0);
+
+       const lucroMesAnterior = 1000; 
+
+       const percentualLucroHoje = lucroMesAnterior > 0 ? ((lucroHoje - lucroMesAnterior) / lucroMesAnterior) * 100 : 0;
+
+       document.getElementById('lucroHoje').innerHTML = formatCurrency(lucroHoje); 
+       document.getElementById('percentualAlteracaoLucroHoje').innerHTML = ` +${percentualLucroHoje.toFixed(2)}% <i class="ri-arrow-up-fill"></i>`;
+   } catch (error) {
+       console.error("Erro ao buscar os dados de lucro de hoje:", error);
+   }
+}
+ async function getRendaSemanaPassada() {
+   try {
+       const Vendas = Parse.Object.extend("Pagamento");
+       const query = new Parse.Query(Vendas);
+
+       const { startDate, endDate } = getLastWeekDateRange();
+      console.log(startDate, endDate);
+       query.greaterThanOrEqualTo("data_pagamento", startDate);
+       query.lessThanOrEqualTo("data_pagamento", endDate);
+
+       const vendasSemanaPassada = await query.find();
+
+       const rendaSemanaPassada = vendasSemanaPassada.reduce((acc, venda) => acc + venda.get('valor'), 0);
+
+       const rendaSemanaAnterior = 50000; 
+
+       const percentualRendaSemanaPassada = rendaSemanaAnterior > 0 ? ((rendaSemanaPassada - rendaSemanaAnterior) / rendaSemanaAnterior) * 100 : 0;
+
+       document.getElementById('rendaSemanaPassada').innerHTML = formatCurrency(rendaSemanaPassada); 
+   } catch (error) {
+       console.error("Erro ao buscar os dados de renda da semana passada:", error);
+   }
+}
+   async function getVendasStatus() {
+      try {
+         const Pedido = Parse.Object.extend("Pedido");
+         const query = new Parse.Query(Pedido);
+
+         const pedidos = await query.find();
+         const totalPedidos = pedidos.length;
+
+         if (totalPedidos === 0) {
+            return; 
+         }
+
+         const vendasSucesso = pedidos.filter(pedido => pedido.get('status') === 'Finalizado').length;
+         const vendasFalhas = pedidos.filter(pedido => pedido.get('status') === 'Cancelado').length;
+         const vendasAndamento = pedidos.filter(pedido => pedido.get('status') === 'Em Andamento').length;
+
+         const percSucesso = ((vendasSucesso / totalPedidos) * 100).toFixed(2);
+         const percFalhas = ((vendasFalhas / totalPedidos) * 100).toFixed(2);
+         const percAndamento = ((vendasAndamento / totalPedidos) * 100).toFixed(2);
+
+         document.getElementById('vendasSucesso').innerHTML = `${percSucesso}%`;
+         document.getElementById('vendasFalhas').innerHTML = `${percFalhas}%`;
+         document.getElementById('vendasAndamento').innerHTML = `${percAndamento}%`;
+
+      } catch (error) {
+         console.error("Erro ao buscar os dados de vendas:", error);
+      }
+   }
+
+   async function getPaymentData() {
+      try {
+          const Pedido = Parse.Object.extend("Pedido");
+          const queryPedido = new Parse.Query(Pedido);
+          const pedidos = await queryPedido.find();
+          
+          const Pagamento = Parse.Object.extend("Pagamento");
+          const queryPagamento = new Parse.Query(Pagamento);
+          const pagamentos = await queryPagamento.find();
+
+          let successfulDeals = 0;
+          let failedDeals = 0;
+          let ongoingDeals = 0;
+
+          const pagamentosPorPedido = pagamentos.reduce((acc, pagamento) => {
+              const idPedido = pagamento.get('id_pedido');
+              if (!acc[idPedido]) {
+                  acc[idPedido] = [];
+              }
+              acc[idPedido].push(pagamento.get('valor'));
+              return acc;
+          }, {});
+
+          pedidos.forEach(pedido => {
+              const statusPedido = pedido.get("status");
+              const idPedido = pedido.get("id_pedido");
+              const valoresPagamentos = pagamentosPorPedido[idPedido] || [];
+
+              const totalPagamento = valoresPagamentos.reduce((acc, valor) => acc + valor, 0);
+
+              if (statusPedido === "Finalizado") {
+                  successfulDeals += totalPagamento;
+              } else if (statusPedido === "Cancelado") {
+                  failedDeals += totalPagamento;
+              } else if (statusPedido === "Em Andamento") {
+                  ongoingDeals += totalPagamento;
+              }
+          });
+
+          console.log(successfulDeals, failedDeals, ongoingDeals);
+
+          if (jQuery('#iq-income-chart').length) {
+              var options = {
+                  series: [{
+                      name: 'Finalizado',
+                      data: [successfulDeals] 
+                  }, {
+                      name: 'Cancelado',
+                      data: [failedDeals] 
+                  }, {
+                      name: 'Em Andamento',
+                      data: [ongoingDeals] 
+                  }],
+                  chart: {
+                      type: 'bar',
+                      height: 350,
+                      stacked: true
+                  },
+                  colors: ["#9d713b", "#fe517e", "#ffbf43"],
+                  plotOptions: {
+                      bar: {
+                          horizontal: false,
+                          columnWidth: '25%',
+                          endingShape: 'rounded'
+                      },
+                  },
+                  legend: {
+                      show: true
+                  },
+                  dataLabels: {
+                      enabled: false
+                  },
+                  stroke: {
+                      show: true,
+                      width: 2,
+                      colors: ['transparent']
+                  },
+                  xaxis: {
+                      categories: ['Vendas'],
+                  },
+                  yaxis: {
+                      title: {
+                          text: 'Total R$'
+                      }
+                  },
+                  fill: {
+                      opacity: 1
+                  },
+                  tooltip: {
+                      y: {
+                          formatter: function (val) {
+                              return "R$ " + val.toLocaleString('pt-BR');
+                          }
+                      }
+                  }
+              };
+
+              var chart = new ApexCharts(document.querySelector("#iq-income-chart"), options);
+              chart.render();
+          }
+      } catch (error) {
+          console.error("Erro ao buscar os dados de pagamento:", error);
+      }
+  }
+
+  let currentPage = 1;
+  const rowsPerPage = 15;
+
+  function formatDate(date) {
+      return new Date(date).toLocaleDateString('pt-BR');
+  }
+
+async function getTableData() {
+   try {
+       const Cliente = Parse.Object.extend("Cliente");
+       const queryCliente = new Parse.Query(Cliente);
+       const clientes = await queryCliente.find();
+
+       const Pedido = Parse.Object.extend("Pedido");
+       const queryPedido = new Parse.Query(Pedido);
+       const pedidos = await queryPedido.find();
+
+       const Pagamento = Parse.Object.extend("Pagamento");
+       const queryPagamento = new Parse.Query(Pagamento);
+       const pagamentos = await queryPagamento.find();
+
+       const tableBody = document.getElementById('tableBody');
+       
+       const clientePedidosMap = {};
+
+       clientes.forEach(cliente => {
+           const clienteId = cliente.get('id_cliente');
+           const clienteNome = cliente.get('nome');
+           clientePedidosMap[clienteId] = { nome: clienteNome, id_cliente: clienteId, pedidos: [] };
+       });
+
+       pedidos.forEach(pedido => {
+           const clienteId = pedido.get('id_cliente');
+           const status = pedido.get('status');
+           const data = pedido.get('data');
+           const id_pedido = pedido.get('id_pedido');
+
+           const pagamentosPedido = pagamentos.filter(pagamento => pagamento.get('id_pedido') === id_pedido);
+           const valorTotal = pagamentosPedido.reduce((acc, pagamento) => acc + pagamento.get('valor'), 0);
+
+           if (clientePedidosMap[clienteId]) {
+               clientePedidosMap[clienteId].pedidos.push({ status, data, valorTotal });
+           }
+       });
+
+       tableBody.innerHTML = '';
+
+       const start = (currentPage - 1) * rowsPerPage;
+       const end = currentPage * rowsPerPage;
+
+       const currentClientes = Object.values(clientePedidosMap).slice(start, end);
+
+       currentClientes.forEach(clienteData => {
+           clienteData.pedidos.forEach((pedido, index) => {
+               const row = document.createElement('tr');
+               
+               if (index === 0) {
+                   row.innerHTML = `
+                       <td rowspan="${clienteData.pedidos.length}">${clienteData.nome}</td>
+                       <td>${formatDate(pedido.data)}</td>
+                       <td>${clienteData.id_cliente}</td>
+                       <td>R$ ${pedido.valorTotal.toLocaleString('pt-BR')}</td>
+                       <td><div class="badge badge-pill ${pedido.status === 'Finalizado' ? 'badge-success' : pedido.status === 'Cancelado' ? 'badge-danger' : 'badge-warning'}">${pedido.status}</div></td>
+                   `;
+               } else {
+                   row.innerHTML = `
+                       <td>${formatDate(pedido.data)}</td>
+                       <td>${clienteData.id_cliente}</td>
+                       <td>R$ ${pedido.valorTotal.toLocaleString('pt-BR')}</td>
+                       <td><div class="badge badge-pill ${pedido.status === 'Finalizado' ? 'badge-success' : pedido.status === 'Cancelado' ? 'badge-danger' : 'badge-warning'}">${pedido.status}</div></td>
+                   `;
+               }
+
+               tableBody.appendChild(row);
+           });
+       });
+
+       document.getElementById('prevPage').disabled = currentPage === 1;
+       document.getElementById('nextPage').disabled = currentPage * rowsPerPage >= Object.keys(clientePedidosMap).length;
+
+   } catch (error) {
+       console.error("Erro ao buscar os dados:", error);
+   }
+}
+
+document.getElementById('prevPage').addEventListener('click', () => {
+   if (currentPage > 1) {
+       currentPage--;
+       getTableData();
+   }
+});
+
+document.getElementById('nextPage').addEventListener('click', () => {
+   currentPage++;
+   getTableData();
+});
+
+async function getProductData() {
+   try {
+       const Produto = Parse.Object.extend("Produto");
+       const queryProduto = new Parse.Query(Produto);
+       const produtos = await queryProduto.find();
+
+       let totalEstoque = 0;
+       let produtosAgrupados = {};
+
+       produtos.forEach(produto => {
+           const nomeProduto = produto.get('nome');
+           const quantidadeEstoque = produto.get('quantidade_estoque');
+           const preco = produto.get('preco');
+
+           if (!produtosAgrupados[nomeProduto]) {
+               produtosAgrupados[nomeProduto] = { nome: nomeProduto, quantidade: 0, valorTotal: 0 };
+           }
+
+           produtosAgrupados[nomeProduto].quantidade += quantidadeEstoque;
+           produtosAgrupados[nomeProduto].valorTotal += preco * quantidadeEstoque;
+
+           totalEstoque += quantidadeEstoque;
+       });
+
+       const container = document.getElementById('despesasContainer');
+       container.innerHTML = ''; 
+
+       Object.values(produtosAgrupados).forEach(produto => {
+           const percentual = (produto.quantidade / totalEstoque) * 100;
+
+           const div = document.createElement('div');
+           div.classList.add('mb-4');
+           div.innerHTML = `
+               <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                   <div class="iq-card-body">
+                       <div class="d-flex align-items-center mt-3">
+                           <div class="icon iq-icon-box rounded iq-bg-danger mr-3">
+                               <i class="ri-shopping-bag-line"></i>
+                           </div>
+                           <div class="iq-details col-sm-9 p-0">
+                               <div class="d-flex align-items-center justify-content-between">
+                                   <span class="title text-dark">${produto.nome}</span>
+                                   <div class="percentage"><b><span>R$</span> ${produto.valorTotal.toLocaleString('pt-BR')}</b></div>
+                               </div>
+                               <div class="iq-progress-bar-linear d-inline-block w-100">
+                                   <div class="iq-progress-bar">
+                                       <span class="bg-danger" style="width: ${percentual}%"></span>
+                                   </div>
+                               </div>
+                               <div class="d-flex align-items-center justify-content-between">
+                                   <span class="">${produto.quantidade} Estoques</span>
+                                   <div class="percentage">${percentual.toFixed(2)}<span>%</span></div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           `;
+           container.appendChild(div);
+       });
+
+   } catch (error) {
+       console.error("Erro ao buscar os dados de produtos:", error);
+   }
+}
+
+if (jQuery('#home-perfomer-chart').length) {
+   async function getPaymentTypes() {
+       try {
+           const Pagamento = Parse.Object.extend("Pagamento");
+           const queryPagamento = new Parse.Query(Pagamento);
+           const pagamentos = await queryPagamento.find();
+
+           let cartaoCount = 0;
+           let boletoCount = 0;
+           let pixCount = 0;
+
+           pagamentos.forEach(pagamento => {
+               const tipo = pagamento.get('tipo');
+               if (tipo === 'Cartao') {
+                   cartaoCount++;
+               } else if (tipo === 'Boleto') {
+                   boletoCount++;
+               } else if (tipo === 'Pix') {
+                   pixCount++;
+               }
+           });
+
+           const chartData = [
+               { label: 'Cartao', value: cartaoCount },
+               { label: 'Boleto', value: boletoCount },
+               { label: 'Pix', value: pixCount }
+           ];
+
+           var donut = new Morris.Donut({
+               element: 'home-perfomer-chart',
+               resize: true,
+               colors: ["#9d713b", "#fe517e", "#99f6ca"],
+               data: chartData,
+               hideHover: 'auto'
+           });
+
+       } catch (error) {
+           console.error("Erro ao buscar os dados de pagamento:", error);
+       }
+   }
+
+   getPaymentTypes();
+}
+
+
+async function getUsersData() {
+   try {
+       const User = Parse.Object.extend("users");
+       const queryUser = new Parse.Query(User);
+
+       const users = await queryUser.find();
+       console.log(users);
+
+       const container = document.getElementById('userListContainer');
+       container.innerHTML = '';
+
+       users.forEach(user => {
+           const username = user.get('username');
+           const imageUrl = user.get('image_url') || 'images/default-avatar.png';
+
+           const div = document.createElement('li');
+           div.classList.add('d-flex', 'mb-4', 'align-items-center', 'py-2');
+           div.innerHTML = `
+               <div class="user-img img-fluid">
+                   <img src="${imageUrl}" alt="story-img" class="rounded avatar-50">
+               </div>
+               <div class="media-support-info ml-3">
+                   <h5>${username}</h5>
+               </div>
+           `;
+
+           container.appendChild(div);
+       });
+
+   } catch (error) {
+       console.error("Erro ao buscar os dados dos usuários:", error);
+   }
+}
+
+async function getLossData() {
+   try {
+       const Pagamento = Parse.Object.extend("Pagamento");
+       const queryPagamento = new Parse.Query(Pagamento);
+       const pagamentos = await queryPagamento.find();
+
+       let dataCartao = [];
+       let dataBoleto = [];
+       let dataPix = [];
+
+       pagamentos.forEach(pagamento => {
+           const tipo = pagamento.get("tipo");
+           const dataPagamento = pagamento.get("data_pagamento");
+           const date = new Date(dataPagamento).toLocaleDateString('pt-BR');
+
+           if (tipo === "Cartao") {
+               dataCartao.push(date);
+           } else if (tipo === "Boleto") {
+               dataBoleto.push(date);
+           } else if (tipo === "Pix") {
+               dataPix.push(date);
+           }
+       });
+
+       let groupedDataCartao = countOccurrences(dataCartao);
+       let groupedDataBoleto = countOccurrences(dataBoleto);
+       let groupedDataPix = countOccurrences(dataPix);
+
+       console.log(groupedDataCartao, groupedDataBoleto, groupedDataPix);
+
+       if (jQuery('#home-loss-chart').length) {
+           var options = {
+               series: [
+                   {
+                       name: 'Cartão',
+                       data: groupedDataCartao
+                   },
+                   {
+                       name: 'Boleto',
+                       data: groupedDataBoleto
+                   },
+                   {
+                       name: 'Pix',
+                       data: groupedDataPix
+                   }
+               ],
+               colors: ["#9d713b", "#fe517e", "#99f6ca"],
+               chart: {
+                   height: 300,
+                   type: 'area',
+                   sparkline: {
+                       enabled: false,
+                   }
+               },
+               dataLabels: {
+                   enabled: false
+               },
+               stroke: {
+                   curve: 'smooth'
+               },
+               xaxis: {
+                   type: 'category',
+                   categories: Object.keys(groupedDataCartao),
+                   labels: {
+                       rotate: -45,
+                       formatter: function(value) {
+                           const date = new Date(value);
+                           return date.toLocaleDateString('pt-BR');
+                       }
+                   }
+               },
+               tooltip: {
+                   x: {
+                       format: 'dd/MM/yy'
+                   },
+               },
+           };
+
+           var chart = new ApexCharts(document.querySelector("#home-loss-chart"), options);
+           chart.render();
+       }
+
+   } catch (error) {
+       console.error("Erro ao buscar os dados dos pagamentos:", error);
+   }
+}
+
+function countOccurrences(arr) {
+   let count = {};
+   arr.forEach(date => {
+       count[date] = (count[date] || 0) + 1;
+   }); 
+   return Object.entries(count).map(([date, count]) => ({ x: date, y: count }));
+}
+
+
+
+async function getPedidoData() {
+   try {
+       const Pedido = Parse.Object.extend("Pedido");
+       const queryPedido = new Parse.Query(Pedido);
+       
+       const pedidos = await queryPedido.find();
+
+       let dataFinalizado = [];
+       let dataCancelado = [];
+       let dataAndamento = [];
+
+       pedidos.forEach(pedido => {
+           const status = pedido.get("status");
+           const data = pedido.get("data");
+
+           const date = new Date(data).toISOString().split('T')[0];
+
+           if (status === "Finalizado") {
+               dataFinalizado.push(date);
+           } else if (status === "Cancelado") {
+               dataCancelado.push(date);
+           } else if (status === "Em Andamento") {
+               dataAndamento.push(date);
+           }
+       });
+
+       let groupedDataFinalizado = countOccurrences(dataFinalizado);
+       let groupedDataCancelado = countOccurrences(dataCancelado);
+       let groupedDataAndamento = countOccurrences(dataAndamento);
+
+       console.log(groupedDataFinalizado, groupedDataCancelado, groupedDataAndamento); 
+
+       if (jQuery('#home-profit-chart').length) {
+           var options = {
+               series: [
+                   {
+                       name: 'Finalizado',
+                       data: groupedDataFinalizado
+                   },
+                   {
+                       name: 'Cancelado',
+                       data: groupedDataCancelado
+                   },
+                   {
+                       name: 'Em Andamento',
+                       data: groupedDataAndamento
+                   }
+               ],
+               colors: ["#9d713b", "#fe517e", "#99f6ca"],
+               chart: {
+                   height: 400,
+                   type: 'area',
+                   sparkline: {
+                       enabled: false,
+                   }
+               },
+               dataLabels: {
+                   enabled: false
+               },
+               stroke: {
+                   curve: 'smooth'
+               },
+               xaxis: {
+                   type: 'datetime',
+                   categories: Object.keys(groupedDataFinalizado),
+                   labels: {
+                       rotate: -45,
+                       formatter: function(value) {
+                           const date = new Date(value);
+                           return date.toLocaleDateString('pt-BR');
+                       }
+                   }
+               },
+               tooltip: {
+                   x: {
+                       format: 'dd/MM/yy' 
+                   },
+               },
+           };
+
+           var chart = new ApexCharts(document.querySelector("#home-profit-chart"), options);
+           chart.render();
+       }
+
+   } catch (error) {
+       console.error("Erro ao buscar os dados dos pedidos:", error);
+   }
+}
+
+function countOccurrences(arr) {
+   let count = {};
+   arr.forEach(date => {
+       count[date] = (count[date] || 0) + 1;
+   });
+   return Object.entries(count).map(([date, count]) => ({ x: date, y: count }));
+}
+
+   getPedidoData();
+   getUsersData();
+   getProductData();
+   getTableData();
+   getPaymentData();
+   getVendasStatus();
+   getRendaSemanaPassada();
+   getTodaySalesData();
+   getSalesData();
+   getTotalProfit();
+   getLucroHoje();
+
+
+ 
+</script>
+
+     
+   </body>
+
+</html>
